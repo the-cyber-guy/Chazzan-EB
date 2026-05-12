@@ -186,22 +186,45 @@ margin-top:0;
 position:fixed;
 bottom:28px;
 right:28px;
-width:68px;
-height:68px;
-background:#25D366;
-border-radius:50%;
+height:62px;
+padding:0 22px;
+background:linear-gradient(135deg,#e4bd6f,#c99b48);
+border:1px solid rgba(255,255,255,0.35);
+border-radius:999px;
 display:flex;
 align-items:center;
 justify-content:center;
-box-shadow:0 10px 30px rgba(0,0,0,0.25);
+gap:12px;
+box-shadow:0 14px 35px rgba(0,0,0,0.28);
 z-index:999;
-transition:0.3s;
+transition:0.3s ease;
+text-decoration:none;
+color:#122033;
+font-weight:800;
 }
 
 .whatsapp-float:hover{
-transform:scale(1.08);
-background:#1ebe5d;
-}  
+transform:translateY(-3px) scale(1.03);
+background:linear-gradient(135deg,#f3d38b,#d7a84f);
+}
+
+.whatsapp-label{
+font-size:0.95rem;
+letter-spacing:0.4px;
+}
+
+@media(max-width:600px){
+.whatsapp-label{
+display:none;
+}
+
+.whatsapp-float{
+width:62px;
+height:62px;
+padding:0;
+border-radius:50%;
+}
+}
 footer{
 background:#0d1522;
 color:#eee5d8;
@@ -441,12 +464,12 @@ elliott@ILcyber.com<br>
 
 </div>
 
-<a href="https://wa.me/17868670248" class="whatsapp-float" target="_blank">
+<a href="https://wa.me/17868670248?text=Hi%20Elliott%2C%20I%27d%20like%20to%20inquire%20about%20bringing%20Chazzan%20EB%20to%20our%20community." class="whatsapp-float" target="_blank" aria-label="Chat with Chazzan EB on WhatsApp">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="white" viewBox="0 0 24 24">
+<span class="whatsapp-label">Book on WhatsApp</span>
 
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#122033" viewBox="0 0 24 24">
 <path d="M20.52 3.48A11.815 11.815 0 0012.04 0C5.4 0 .02 5.38.02 12c0 2.12.55 4.19 1.6 6.02L0 24l6.17-1.61A11.93 11.93 0 0012.04 24c6.62 0 12-5.38 12-12 0-3.2-1.25-6.2-3.52-8.52zM12.04 21.82a9.8 9.8 0 01-5-1.37l-.36-.21-3.66.95.98-3.57-.24-.37a9.79 9.79 0 1117.08-5.25 9.79 9.79 0 01-9.8 9.82zm5.39-7.35c-.3-.15-1.77-.88-2.04-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.95 1.18-.17.2-.35.22-.65.07-.3-.15-1.28-.47-2.43-1.5-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.6.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.64.72.23 1.37.2 1.88.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
-
 </svg>
 
 </a>
