@@ -1,88 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Chazzan EB | Chazzan for Hire | Carlebach Davening & Jewish Music USA</title>
-<meta name="description" content="Chazzan EB — Elliott Natan Black — is a Chazzan for hire, Ba'al Tefillah, kumzits leader and Jewish entertainer bringing Carlebach davening, ruach and soulful Orthodox Jewish music to communities across the USA." />
-<meta name="keywords" content="Chazzan for hire, Ba'al Tefillah, Carlebach davening, Carlebach minyan, kumzits leader, Havdalah concert, Jewish entertainer, Bar Mitzvah Shabbat, Orthodox Jewish music, Shabbaton leader, Chag davening, simcha entertainment, Jewish music USA, ruach davening, acoustic Jewish music, Ashkenaz prayer leader, Jewish community entertainment, Chazzan USA, hire a Chazzan" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chazzan EB | Feel the Ruach. Raise the Room.</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-html {
+
+html{
 scroll-behavior:smooth;
 }
 
-body {
+body{
 margin:0;
-font-family:'Assistant', sans-serif;
-background:#f6efe3;
+background:#f5eee2;
+font-family:'Assistant',sans-serif;
 color:#1b2431;
 line-height:1.7;
 }
 
-* {
+*{
 box-sizing:border-box;
 }
 
-body::before {
-content:'';
-position:fixed;
-inset:0;
-background-image: radial-gradient(rgba(201,155,72,0.06) 1px, transparent 1px);
-background-size:24px 24px;
-pointer-events:none;
-z-index:-2;
-}
-
-h1,h2,h3,h4 {
-font-family:'Cormorant Garamond', serif;
-font-weight:600;
-letter-spacing:0.5px;
-}
-
-.container {
+.container{
 width:min(1200px,92%);
 margin:auto;
 }
 
-.hero {
+.hero{
 min-height:100vh;
-background:
-linear-gradient(rgba(8,16,28,0.72), rgba(8,16,28,0.82)),
-url('fd8a8e88-7067-4c89-8b7b-a473fb915fb3.png') center/cover no-repeat;
-position:relative;
 display:flex;
 align-items:center;
-overflow:hidden;
-}
-
-.hero::after {
-content:'';
-position:absolute;
-inset:0;
-background:linear-gradient(180deg, transparent 55%, #f6efe3 100%);
-}
-
-.hero-content {
-position:relative;
-z-index:2;
-max-width:760px;
+background:
+linear-gradient(rgba(10,18,28,0.7),rgba(10,18,28,0.8)),
+url('fd8a8e88-7067-4c89-8b7b-a473fb915fb3.png');
+background-size:cover;
+background-position:center;
 color:white;
+padding:80px 0;
 }
 
-.eyebrow {
+.hero-content{
+max-width:750px;
+}
+
+.eyebrow{
 letter-spacing:3px;
 text-transform:uppercase;
-font-size:0.8rem;
+color:#e2bf73;
 margin-bottom:20px;
-color:#e9c57c;
+font-size:14px;
 }
 
-.hero h1 {
-font-size:clamp(4rem,9vw,7rem);
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(4rem,8vw,7rem);
 line-height:0.95;
 margin:0;
 }
+
+.hero p{
+font-size:1.3rem;
+margin:30px 0;
+max-width:650px;
+color:#f0e7da;
+}
+
+.btn{
+display:inline-block;
+padding:18px 34px;
+background:#c99b48;
+color:#10151f;
+text-decoration:none;
+font-weight:700;
+border-radius:60px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#e3b764;
+transform:translateY(-2px);
+}
+
+section{
+padding:110px 0;
+}
+
+.section-title{
+font-family:'Cormorant Garamond',serif;
+font-size:4rem;
+margin-bottom:20px;
+}
+
+.section-intro{
+font-size:1.2rem;
+max-width:850px;
+color:#435066;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:60px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:28px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+font-family:'Cormorant Garamond',serif;
+font-size:2rem;
+margin-top:0;
+}
+
+.highlight{
+background:#122033;
+color:white;
+}
+
+.about{
+display:grid;
+grid-template-columns:420px 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:30px;
+box-shadow:0 20px 50px rgba(0,0,0,0.2);
+}
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.testimonial{
+background:white;
+padding:35px;
+border-radius:28px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+.testimonial strong{
+display:block;
+margin-top:25px;
+color:#9a6d22;
+}
+
+.cta{
+background:#122033;
+color:white;
+padding:90px 40px;
+border-radius:40px;
+text-align:center;
+}
+
+.cta h2{
+font-family:'Cormorant Garamond',serif;
+font-size:4rem;
+margin-top:0;
+}
+
+footer{
+background:#0d1522;
+color:#eee5d8;
+padding:50px 0;
+text-align:center;
+}
+
+footer a{
+color:#e2bf73;
+text-decoration:none;
+}
+
+@media(max-width:900px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.section-title,
+.cta h2{
+font-size:3rem;
+}
+
+.hero h1{
+font-size:4rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+<div class="container hero-content">
+
+<div class="eyebrow">
+Chazzan EB • Elliott Natan Black
+</div>
+
+<h1>
+Feel the Ruach.<br>
+Raise the Room.
+</h1>
+
+<p>
+Bringing Orthodox communities across America alive with song, spirit and togetherness.
+</p>
+
+<a href="contact.html" class="btn">
+Book Chazzan EB
+</a>
+
+</div>
+</header>
+
+<section>
+<div class="container">
+
+<h2 class="section-title">
+What I Do
+</h2>
+
+<p class="section-intro">
+
+I bring Carlebach-style acoustic davening, energy and musical ruach to Orthodox communities across America.
+
+Whether it’s a soulful Shabbat, uplifting Yom Tov, kumzits, Havdalah concert or simcha, the goal is always the same:
+
+to create a room where everyone sings together naturally, joyfully and powerfully.
+
+All davening follows traditional halachic minhagim and is conducted entirely in Hebrew.
+
+</p>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="section-title">
+Services
+</h2>
+
+<div class="services-grid">
+
+<div class="card">
+<h3>Shabbatot</h3>
+<p>Kabbalat Shabbat, Shacharit and Musaf with soulful Carlebach davening.</p>
+</div>
+
+<div class="card">
+<h3>Chagim</h3>
+<p>Yom Tov davening and celebration filled with warmth and ruach.</p>
+</div>
+
+<div class="card">
+<h3>Smachot</h3>
+<p>Weddings, Bar Mitzvahs and celebrations brought alive through music.</p>
+</div>
+
+<div class="card">
+<h3>Kumzits</h3>
+<p>Intimate acoustic sing-along experiences for communities and retreats.</p>
+</div>
+
+<div class="card">
+<h3>Havdalah Concerts</h3>
+<p>Soul-stirring musical evenings full of warmth and connection.</p>
+</div>
+
+<div class="card highlight">
+<h3>The One-Time-Choir</h3>
+<p>Your entire kehillah becomes a choir for one unforgettable communal experience.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container about">
+
+<div>
+<img src="Semi-formal_profile.jpg" alt="Elliott Black">
+</div>
+
+<div>
+
+<h2 class="section-title">
+About Elliott
+</h2>
+
+<p>
+
+I'm a British-born Israeli raised in and around community my whole life.
+
+Music, davening and communal singing have always been at the heart of who I am.
+
+I've led davening and performed worldwide — from Hong Kong to Israel to South Africa — and have been leading High Holiday davening for over 18 years.
+
+Today I'm based in the USA on shlichut as a diplomatic spouse and Israeli hi-tech representative.
+
+But when Shabbat comes in, everything else falls away.
+
+My heart is with my guitar, my voice and the kehillah in front of me.
+
+</p>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="section-title">
+Testimonials
+</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+<p>
+“Elliot Black brings a rare energy, combining polish and professionalism with a warmth that never feels performative or forced.”
+</p>
+<strong>
+Rabbi Joseph Albo
+</strong>
+</div>
+
+<div class="testimonial">
+<p>
+“Experiencing Elliot Black in person is just that, an experience. He commands the room and captures everyone's attention.”
+</p>
+<strong>
+Elan Kornblum
+</strong>
+</div>
+
+<div class="testimonial">
+<p>
+“Elliott Black came with his heart and soul, voice and guitar, and brought a beautiful warmth to the experience.”
+</p>
+<strong>
+Rabbi Mendel Rosenblum
+</strong>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<div class="cta">
+
+<h2>
+Ready to bring the ruach to your community?
+</h2>
+
+<p>
+Let's talk about your Shabbat, Yom Tov or special event.
+</p>
+
+<a href="contact.html" class="btn">
+Contact Chazzan EB
+</a>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+
+<div class="container">
+
+<h3>
+Chazzan EB — Elliott Natan Black
+</h3>
+
+<p>
+Feel the Ruach. Raise the Room.
+</p>
+
+<p>
+elliott@ILcyber.com<br>
+786-867-0248
+</p>
+
+</div>
+
+</footer>
+
+</body>
 </html>
