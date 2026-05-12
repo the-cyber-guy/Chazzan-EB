@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+padding:18px;
+border:none;
+border-radius:50px;
+background:#c99b48;
+font-size:1rem;
+font-weight:700;
+cursor:pointer;
+transition:0.35s ease;
+}
+
+button:hover {
+background:#e1b463;
+transform:translateY(-2px);
+}
+
+.back {
+display:inline-block;
+margin-top:35px;
+color:#e5c27a;
+text-decoration:none;
+}
+
+@media(max-width:900px){
+.contact-wrap {
+grid-template-columns:1fr;
+}
+
+h1 {
+font-size:3.2rem;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="contact-wrap">
+<div class="left">
+<h1>Bring the Ruach to Your Community.</h1>
+<p>
+Elliott is available for communities across the USA for Shabbatot, Chagim, Smachot, Kumzits, Havdalah Concerts and more. Reach out below for availability and a personalised quote.
+</p>
+
+<div class="contact-info">
+<p><strong>Email:</strong><br>elliott@ILcyber.com</p>
+<p><strong>Phone:</strong><br>786-867-0248</p>
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+</div>
+
+<div class="right">
+<h2>Request Availability</h2>
+
+<form action="mailto:elliott@ILcyber.com" method="POST" enctype="text/plain">
+<input type="text" name="Full Name" placeholder="Full Name" required>
+<input type="email" name="Email Address" placeholder="Email Address" required>
+<input type="tel" name="Phone Number" placeholder="Phone Number" required>
+<textarea name="Message" placeholder="Message / Request details" required></textarea>
+<button type="submit">Send Request</button>
+</form>
+</div>
+</div>
+
+</body>
+</html>
